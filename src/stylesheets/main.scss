@@ -77,8 +77,6 @@ header h4 {
   //   animation: pulse 0.5s infinite alternate;
 }
 
-/* Add all your CSS below */
-
 /* Hero CSS */
 
 /* Work CSS */
@@ -748,15 +746,6 @@ a {
   right: 0%;
 }
 
-// .hero__fill1 {
-//   width: 100%;
-//   height: 100%;
-//   background-image: url("./src/images/phone.png");
-//   background-position: 50%;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
-
 .hero__fill2 {
   z-index: 1;
   width: 100%;
@@ -1348,12 +1337,12 @@ footer {
     padding: 3.6em 1.5em;
   }
 
-  .container.is--hero {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
+  // .container.is--hero {
+  //   flex-direction: row;
+  //   // justify-content: center;
+  //   // align-items: center;
+  //   display: flex;
+  // }
 
   .container.is--about {
     padding-top: 7.1em;
@@ -1441,67 +1430,76 @@ footer {
     width: 100%;
   }
 
+  // .hero__photos {
+  //   width: auto;
+  //   justify-content: space-between;
+  //   position: relative;
+  // }
+
   .hero__photos {
-    width: auto;
-    justify-content: center;
-    position: relative;
+    width: 100vw;
   }
 
-  .hero__small-img-contain {
-    z-index: 5;
-    width: 100%;
+  .hero__img2 {
+    width: 50px;
     height: 100%;
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
   }
 
-  .hero__small-img-contain.is--first {
-    width: auto;
-    margin-top: 12.1em;
-    margin-left: 2.2em;
-    position: absolute;
-    top: 0%;
-    bottom: auto;
-    left: 0%;
-    right: auto;
-  }
+  // .hero__small-img-contain {
+  //   z-index: 5;
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   top: 0%;
+  //   bottom: 0%;
+  //   left: 0%;
+  //   right: 0%;
+  // }
 
-  .hero__small-img-contain.is--second {
-    width: auto;
-    position: absolute;
-    top: auto;
-    bottom: 0%;
-    left: auto;
-    right: 0%;
-  }
+  // .hero__small-img-contain.is--first {
+  //   width: auto;
+  //   margin-top: 12.1em;
+  //   margin-left: 2.2em;
+  //   position: absolute;
+  //   top: 0%;
+  //   bottom: auto;
+  //   left: 0%;
+  //   right: auto;
+  // }
 
-  .hero__img1 {
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    border-radius: 100vw;
-    margin-top: 0;
-    margin-left: 0;
-  }
+  // .hero__small-img-contain.is--second {
+  //   width: auto;
+  //   position: absolute;
+  //   top: auto;
+  //   bottom: 0%;
+  //   left: auto;
+  //   right: 0%;
+  // }
 
-  .hero__img3 {
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    border-radius: 100vw;
-    margin-top: 0;
-    margin-bottom: -10.4em;
-    margin-right: 1.9em;
-    position: relative;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: auto;
-  }
+  // .hero__img1 {
+  //   z-index: 2;
+  //   width: 100%;
+  //   height: 100%;
+  //   opacity: 1;
+  //   border-radius: 100vw;
+  //   margin-top: 0;
+  //   margin-left: 0;
+  // }
+
+  // .hero__img3 {
+  //   width: 100%;
+  //   height: 100%;
+  //   opacity: 1;
+  //   border-radius: 100vw;
+  //   margin-top: 0;
+  //   margin-bottom: -10.4em;
+  //   margin-right: 1.9em;
+  //   position: relative;
+  //   top: 0%;
+  //   bottom: 0%;
+  //   left: 0%;
+  //   right: auto;
+  // }
 
   .hero__star3 {
     margin-left: -5em;
