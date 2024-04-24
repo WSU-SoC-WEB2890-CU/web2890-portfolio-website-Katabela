@@ -1,58 +1,895 @@
-* {
+// * {
+//   margin: 0;
+//   box-sizing: border-box;
+// }
+
+.nav {
+  background-color: rgb(255, 255, 255, 0.95);
+  position: fixed;
+  font-family: Gulfs Display, sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  padding: 5%;
+}
+
+.pins {
+  padding: 4%;
+}
+
+.underline {
+  max-width: 15%;
+  border-top: 2px solid black;
+  margin: auto;
+}
+
+.btn.btn-lg.btn-block {
+  background-color: pink;
+  color: white;
+}
+
+.btn.btn-lg.btn-block:hover {
+  background-color: rgb(224, 130, 146);
+}
+
+.btn.btn-lg.btn-block h2:hover {
+  text-shadow: 3px 3px black;
+}
+
+.project-images {
+  margin: 0;
+  margin-top: -16px;
+  padding: 0;
+}
+
+// HERO IMAGE //
+.container2 {
+  background-image: url("../images/LOC.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-attachment: fixed;
+}
+
+.container3 {
+  background-image: url("../images/Caption.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-attachment: fixed;
+}
+
+.container4 {
+  background-image: url("../images/Clear.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-attachment: fixed;
+}
+
+.container5 {
+  background-image: url("../images/Wonderment.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-attachment: fixed;
+}
+
+.container6 {
+  background-image: url("../images/meals.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-attachment: fixed;
+}
+
+.container7 {
+  background-image: url("../images/MealHero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  background-attachment: fixed;
+}
+
+// WEB FEATURES GRID //
+.description-grid {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  background-color: black;
+}
+
+.description-grid .row,
+.description-grid .col {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-header {
-  position: relative;
-  left: 0;
-  top: 0;
-  width: 1005;
-  height: 80px;
-}
-header h4 {
-  position: absolute;
-  left: 10%;
-  bottom: 1rem;
-  font-size: 1.6rem;
+.description-grid .row [class^="col-"] {
+  padding-right: 0;
+  padding-left: 0;
 }
 
-/* Splash Screen */
-.intro {
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
+.description-grid-items.flex-fill .col {
+  flex-grow: 1;
+}
+
+.padding-10 {
+  padding: 10px 0 10px 30px;
+}
+
+.padding-30 {
+  padding: 30px;
+}
+
+.mh-10 {
+  max-height: 15%;
+}
+
+.mh-90 {
+  max-height: 85%;
+}
+
+.align {
+  display: grid;
+  place-items: center; /* Center vertically */
+  align-content: center;
+}
+
+.design-brief {
+  background-color: white;
+}
+
+.design-req {
+  background-color: black;
+  color: white;
+}
+
+.description-grid-item1 {
+  background-color: #162b2f;
+  color: white;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center;
+}
+
+.description-grid-item2 {
+  background-color: white;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center;
+}
+
+.description-grid-item3 {
+  background-color: #75e6d1;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center;
+}
+
+.description-grid-item4 {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center;
+}
+
+// Design Requirements Caption It //
+
+.CI1 {
+  background-color: #fbce34;
+}
+
+.CI3 {
+  background-color: #323232;
+  color: white;
+}
+
+.CI4 {
+  background-color: #fee072;
+  color: black;
+}
+
+// Design Requirements Clear //
+
+.Clear1 {
+  background-color: #9b7dde;
+}
+
+.Clear2 {
+  background-color: white;
+}
+
+.Clear3 {
+  background-color: #f8f5ff;
+}
+
+.Clear4 {
+  background-color: #dfacf7;
+}
+
+// Design Requirements Wonder //
+
+.W1 {
+  background-color: #22bab3;
+}
+
+.W2 {
+  background-color: #f0652f;
+}
+
+.W3 {
+  background-color: #323232;
+  color: white;
+}
+
+.W4 {
+  background-color: #318a9c;
+}
+
+// Design Requirements Meals //
+
+.Meals1 {
+  background-color: #b74621;
+}
+
+.Meals2 {
+  background-color: white;
+}
+
+.Meals3 {
+  background-color: #3f3f3f;
+  color: white;
+}
+
+.Meals4 {
+  background-color: #4c1604;
+}
+
+// Design Requirements Meal Hero //
+
+.MH1 {
+  background-color: #c52129;
+}
+
+.MH2 {
+  background-color: white;
+}
+
+.MH3 {
+  background-color: black;
+  color: white;
+}
+
+.MH4 {
+  background-color: #fde9ed;
+  color: black;
+}
+
+// COLOR PALLETE
+
+.specialty {
+  text-align: center;
+}
+
+//COLOR PALLETE - LOC//
+
+.swatch {
+  border-radius: 50%;
   width: 100%;
-  height: 100vh;
-  background-color: #0082f3;
-  transition: 1s;
+  padding-bottom: 100%;
+  text-align: center;
+  margin-bottom: 15%;
+  margin-top: 15%;
 }
 
-.logo-header {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
+.swatch-1-LOC {
+  background-color: #75e6d1;
+  box-shadow: 5px 5px black;
 }
 
-.logo {
-  position: relative;
-  display: inline-block;
-  bottom: -20px;
-  opacity: 0;
+.swatch-2-LOC {
+  background-color: #20c5c7;
+  box-shadow: 5px 5px black;
 }
 
-.logo.active {
-  bottom: 0;
-  opacity: 1;
-  transition: ease-in-out 0.5s;
+.swatch-3-LOC {
+  background-color: #162b2f;
+  box-shadow: 5px 5px black;
 }
 
-.logo.fade {
-  bottom: 150px;
-  opacity: 0;
-  transition: ease-in-out 0.5s;
+.swatch-4-LOC {
+  background-color: #07181c;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-5-LOC {
+  background-color: #ffffff;
+  box-shadow: 5px 5px black;
+}
+
+//COLOR PALLETE - CI//
+
+.swatch-1-CI {
+  background-color: #fbce34;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-2-CI {
+  background-color: #fee072;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-3-CI {
+  background-color: #323232;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-4-CI {
+  background-color: #000000;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-5-CI {
+  background-color: #ffffff;
+  box-shadow: 5px 5px black;
+}
+
+//COLOR PALLETE - CLEAR//
+
+.swatch-1-Clear {
+  background-color: #dfacf7;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-2-Clear {
+  background-color: #9b7dde;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-3-Clear {
+  background-color: #ede3fe;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-4-Clear {
+  background-color: #f8f5ff;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-5-Clear {
+  background-color: #fdebc0;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-6-Clear {
+  background-color: #f8b75e;
+  box-shadow: 5px 5px black;
+}
+
+//COLOR PALLETE - WONDERMENT//
+
+.swatch-1-Wonder {
+  background-color: #d83330;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-2-Wonder {
+  background-color: #f0652f;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-3-Wonder {
+  background-color: #fabe34;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-4-Wonder {
+  background-color: #22bab3;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-5-Wonder {
+  background-color: #318a9c;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-6-Wonder {
+  background-color: #f6f6f6;
+  box-shadow: 5px 5px black;
+}
+
+//COLOR PALLETE - MEALS//
+
+.swatch-1-meals {
+  background-color: #4c1604;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-2-meals {
+  background-color: #882c10;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-3-meals {
+  background-color: #b74621;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-4-meals {
+  background-color: #3f3f3f;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-5-meals {
+  background-color: #ffffff;
+  box-shadow: 5px 5px black;
+}
+
+//COLOR PALLETE - Meal Hero//
+
+.swatch-1-MH {
+  background-color: #c52129;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-2-MH {
+  background-color: #ef4036;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-3-MH {
+  background-color: #fde9ed;
+  box-shadow: 5px 5px black;
+}
+
+.swatch-4-MH {
+  background-color: #ffffff;
+  box-shadow: 5px 5px black;
+}
+
+// TYPOGRAPHY LOD//
+
+.type-heading-LeagueSpartan {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  font-size: 92px;
+  color: #5a6770;
+}
+
+p.type-subhead {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #5a6770;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+p.type-style-LeagueSpartan {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  color: black;
+  letter-spacing: -6px;
+  line-height: 72px;
+  padding-top: 6%;
+}
+
+p.League.Spartan {
+  font-family: "League Spartan", sans-serif;
+  color: #5a6770;
+  font-size: 30px;
+  line-height: 66px;
+}
+
+p.League.Spartan.Extra.Light {
+  font-weight: 300;
+  padding-top: 4%;
+}
+
+p.League.Spartan.Regular {
+  font-weight: 300;
+}
+
+p.League.Spartan.Thin {
+  font-weight: 400;
+}
+
+p.League.Spartan.Medium {
+  font-weight: 500;
+}
+
+p.League.Spartan.Bold {
+  font-weight: 900;
+  padding-bottom: 6%;
+}
+
+// TYPOGRAPHY AmericanTypewriter//
+
+.type-heading-AmericanTypewriter {
+  font-family: "American Typewriter", serif;
+  font-weight: 400;
+  font-size: 92px;
+  color: #5a6770;
+}
+
+p.type-subhead {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #5a6770;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+p.type-style-AmericanTypewriter {
+  font-family: "American Typewriter", serif;
+  font-weight: 300;
+  font-size: 60px;
+  color: black;
+  letter-spacing: -6px;
+  line-height: 72px;
+  padding-top: 6%;
+}
+
+p.AmericanTypewriter {
+  font-family: "American Typewriter", serif;
+  color: #5a6770;
+  font-size: 25px;
+  line-height: 66px;
+}
+
+p.AmericanTypewriter.Extra.Light {
+  font-weight: 300;
+  padding-top: 4%;
+}
+
+p.AmericanTypewriter.Regular {
+  font-weight: 300;
+}
+
+p.AmericanTypewriter.Thin {
+  font-weight: 400;
+}
+
+p.AmericanTypewriter.Medium {
+  font-weight: 500;
+}
+
+p.AmericanTypewriter.Bold {
+  font-weight: 900;
+  padding-bottom: 6%;
+}
+
+// TYPOGRAPHY Roboto//
+
+.type-heading-Roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 92px;
+  color: #5a6770;
+}
+
+p.type-subhead {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #5a6770;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+p.type-style-Roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 55px;
+  color: black;
+  letter-spacing: -6px;
+  line-height: 72px;
+  padding-top: 6%;
+}
+
+p.Roboto {
+  font-family: "Roboto", sans-serif;
+  color: #5a6770;
+  font-size: 25px;
+  line-height: 66px;
+}
+
+p.Roboto.Extra.Light {
+  font-weight: 300;
+  padding-top: 4%;
+}
+
+p.Roboto.Regular {
+  font-weight: 300;
+}
+
+p.Roboto.Thin {
+  font-weight: 400;
+}
+
+p.Roboto.Medium {
+  font-weight: 500;
+}
+
+p.Roboto.Bold {
+  font-weight: 900;
+  padding-bottom: 6%;
+}
+
+// TYPOGRAPHY IBM Plex//
+
+.type-heading-IBM {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 92px;
+  color: #5a6770;
+}
+
+p.type-subhead {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #5a6770;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+p.type-style-IBM {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  font-size: 55px;
+  color: black;
+  letter-spacing: -6px;
+  line-height: 72px;
+  padding-top: 6%;
+}
+
+p.IBM {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #5a6770;
+  font-size: 25px;
+  line-height: 66px;
+}
+
+p.IBM.Extra.Light {
+  font-weight: 300;
+  padding-top: 4%;
+}
+
+p.IBM.Regular {
+  font-weight: 300;
+}
+
+p.IBM.Thin {
+  font-weight: 400;
+}
+
+p.IBM.Medium {
+  font-weight: 500;
+}
+
+p.IBM.Bold {
+  font-weight: 900;
+  padding-bottom: 6%;
+}
+
+// TYPOGRAPHY Arial//
+
+.type-heading-Arial {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 92px;
+  color: #5a6770;
+}
+
+p.type-subhead {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #5a6770;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+p.type-style-Arial {
+  font-family: "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 55px;
+  color: black;
+  letter-spacing: -6px;
+  line-height: 72px;
+  padding-top: 6%;
+}
+
+p.Arial {
+  font-family: "Arial", sans-serif;
+  color: #5a6770;
+  font-size: 25px;
+  line-height: 66px;
+}
+
+p.Arial.Extra.Light {
+  font-weight: 300;
+  padding-top: 4%;
+}
+
+p.Arial.Regular {
+  font-weight: 300;
+}
+
+p.Arial.Thin {
+  font-weight: 400;
+}
+
+p.Arial.Medium {
+  font-weight: 500;
+}
+
+p.Arial.Bold {
+  font-weight: 900;
+  padding-bottom: 6%;
+}
+
+// TYPOGRAPHY Futura//
+
+.type-heading-Futura {
+  font-family: "Futura", sans-serif;
+  font-weight: 400;
+  font-size: 92px;
+  color: #5a6770;
+}
+
+p.type-subhead {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #5a6770;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+p.type-style-Futura {
+  font-family: "Futura", sans-serif;
+  font-weight: 300;
+  font-size: 55px;
+  color: black;
+  letter-spacing: -6px;
+  line-height: 72px;
+  padding-top: 6%;
+}
+
+p.Futura {
+  font-family: "Futura", sans-serif;
+  color: #5a6770;
+  font-size: 25px;
+  line-height: 66px;
+}
+
+p.Futura.Extra.Light {
+  font-weight: 100;
+  padding-top: 4%;
+}
+
+p.Futura.Regular {
+  font-weight: 300;
+}
+
+p.Futura.Thin {
+  font-weight: 400;
+}
+
+p.Futura.Medium {
+  font-weight: 500;
+}
+
+p.Futura.Bold {
+  font-weight: 900;
+  padding-bottom: 6%;
+}
+
+// App Prototype Design //
+
+.prototype {
+  background-color: #f8f4e9;
+  border: 10px solid black;
+}
+
+.app-prototype {
+  height: 80vh;
+}
+
+.MealHeroApp1,
+.MealHeroApp2,
+.MealHeroApp3,
+.MealHeroApp4,
+.MealHeroApp5,
+.MealHeroApp6 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 100%;
+}
+
+.MealHeroApp1 {
+  background-image: url("../images/MealHero/meal-hero-01.png");
+}
+
+.MealHeroApp2 {
+  background-image: url("../images/MealHero/meal-hero-02.png");
+}
+
+.MealHeroApp3 {
+  background-image: url("../images/MealHero/meal-hero-03.png");
+}
+
+.MealHeroApp4 {
+  background-image: url("../images/MealHero/meal-hero-04.png");
+}
+
+.MealHeroApp5 {
+  background-image: url("../images/MealHero/meal-hero-05.png");
+}
+
+.MealHeroApp6 {
+  background-image: url("../images/MealHero/meal-hero-06.png");
+}
+
+// WONDERMENT //
+
+.WonderApp1,
+.WonderApp2,
+.WonderApp3,
+.WonderApp4,
+.WonderApp5,
+.WonderApp6 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 100%;
+}
+
+.WonderApp1 {
+  background-image: url("../images/Wonder/1.png");
+}
+
+.WonderApp2 {
+  background-image: url("../images/Wonder/2.png");
+}
+
+.WonderApp3 {
+  background-image: url("../images/Wonder/3.png");
+}
+
+.WonderApp4 {
+  background-image: url("../images/Wonder/4.png");
+}
+
+.WonderApp5 {
+  background-image: url("../images/Wonder/5.png");
+}
+
+.WonderApp6 {
+  background-image: url("../images/Wonder/6.png");
+}
+
+// Responsive styles //
+
+@media screen and (max-width: 1080px) {
+  .app-prototype {
+    padding: 0;
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .app-prototype {
+    padding: 0;
+    height: 35vh;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .app-prototype {
+    padding: 0;
+    height: 30vh;
+  }
 }
